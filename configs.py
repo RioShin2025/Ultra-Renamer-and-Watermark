@@ -12,15 +12,15 @@ logging.basicConfig(
 
 
 class Config(object):
-    API_ID = int(os.environ.get("API_ID", ""))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_ID = int(os.environ.get("API_ID", "20366634"))
+    API_HASH = os.environ.get("API_HASH", "72095ec36984aa9ceb0dbaa9cec31559")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8265514943:AAEVbDHtAcnPoF7X2v-FBXgji7_WeyA4V8c")
     DOWNLOAD_DIR = os.environ.get("DOWNLOAD_DIR", "./downloads")
     LOGGER = logging
-    OWNER_ID = int(os.environ.get("OWNER_ID", 5339194287))
+    OWNER_ID = int(os.environ.get("OWNER_ID", 8476571786))
     PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "0").split()))
     PRO_USERS.append(OWNER_ID)
-    MONGODB_URI = os.environ.get("MONGODB_URI", "")
+    MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb+srv://RioShin:Developer@rioshindevolper.dywdndk.mongodb.net/?appName=RioShinDevolper")
     FORCE_SUB = os.environ.get("FORCE_SUB", "beta_bot_updates")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-100"))
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
